@@ -88,35 +88,18 @@
                                             <div class="grid_12">
                                             	<div class="indent-left">
                                                     <h3 class="p2">Contact Form</h3>
-                                                    <!-- <form name="contact" method="POST" data-netlify="true">
-                                                        <p>
-                                                          <label>Your Name: <input type="text" name="name" /></label>   
-                                                        </p>
-                                                        <p>
-                                                          <label>Your Email: <input type="email" name="email" /></label>
-                                                        </p>
-                                                        
-                                                        <p>
-                                                          <label>Message: <textarea name="message"></textarea></label>
-                                                        </p>
-                                                        <p>
-                                                          <button type="submit">Send</button>
-                                                        </p>
-                                                      </form> -->
-                                                    <form name="contact"  method="POST"  data-netlify="true">                    
+                                                        <form name="contact" id="contact-form"  method="POST" enctype="multipart/form-data" action="send_form_email" data-netlify="true">                    
                                                         <fieldset>
-                                                            <label><span class="text-form">First Name:</span><input name="first_name" type="text" /></label>
-                                                            <label><span class="text-form">Last Name:</span><input name="last_name" type="text" /></label>
-                                                            <label><span class="text-form">Email:</span><input name="email" type="text" /></label>
-                                                            <label><span class="text-form">Phone:</span><input name="telephone" type="text" /></label>
-                                                            <div class="wrapper">
-                                                                <div class="text-form">Message:</div><textarea name="comments"></textarea>
-                                                            </div>
-                                                            <div class="buttons">
-                                                                <a class="button" href="#" onClick="document.getElementById('contact-form').reset()">Clear</a>
-                                                                <button class="button" type="submit">Send</button>
-                                                            </div>
-                                                        </fieldset>
+                                                              <label><span class="text-form">First Name:</span><input name="first_name" type="text" /></label>
+															  <label><span class="text-form">Last Name:</span><input name="last_name" type="text" /></label>
+                                                              <label><span class="text-form">Email:</span><input name="email" type="text" /></label>   
+                                                              <label><span class="text-form">Phone:</span><input name="telephone" type="text" /></label>                                    
+                                                              <div class="wrapper"><div class="text-form">Message:</div><textarea name="comments"></textarea></div>
+                                                              <div class="buttons">
+                                                                  <a class="button" href="#" onClick="document.getElementById('contact-form').reset()">Clear</a>
+                                                                  <button class="button" type="submit">Send</button>
+                                                              </div>                             
+                                                        </fieldset>						
                                                     </form>
                                                 </div>
                                             </div>
